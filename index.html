@@ -45,7 +45,9 @@
 
             <div id="apresentacao-dados">
                 <picture>
-                    <img src="images/eu/pablopbs.jpg" alt="Pablo Barbosa Silva" height="420" width="312">
+                    <div id="apresentacao-background">
+                        <img id="apresentacao-img" src="images/eu/pablopbs-no-background.png" alt="Pablo Barbosa Silva" height="420" width="312">
+                    </div>
                 </picture>
                 <div id="apresentacao-texto">
                     <h2>Caxias - MA</h2>
@@ -62,7 +64,7 @@
             <div id="tecnologias-itens">
                 <div>
                     <i id="html" title="HTML5" class="fa-brands fa-html5"></i>
-                    <p>Desde a hierarquia de títulos até flexbox e grid layout.</p>
+                    <p>Desde a hierarquia de títulos até flexbox e grid layout, incluindo HTML semântico</p>
                 </div>
                 <div>
                     <i id="css" title="CSS3" class="fa-brands fa-css3-alt"></i>
@@ -70,7 +72,7 @@
                 </div>
                 <div>
                     <i id="php" title="PHP" class="fa-brands fa-php"></i>
-                    <p>Lógica de programação, criação de funções, arrays, conexão com o banco de dados utilizando o phpmyadmin e o mysqli, além de conhecimentos de pogramação orientada a objetos.</p>
+                    <p>Funções, arrays, conexão com o banco de dados utilizando phpmyadmin e mysqli, além de conhecimentos de pogramação orientada a objetos.</p>
                 </div>
                 <div>
                     <i id="sql" title="MySQL" class="fa-solid fa-database"></i>
@@ -89,10 +91,90 @@
         <section id="projetos">
             <h1 class="sessao-titulo">PROJETOS</h1>
             <div class="linha"></div>
+
+            <div id="grid-projetos">
+                <div class="grid-item">
+                    <picture>
+                        <img src="images/projetos-imgs/miranha.jpg" alt="Projeto Miranha" height="auto" width="100%">
+                    </picture>
+                    <p>Site desenvolvido em homenagem ao héroi Homem-Aranha.</p>
+                    <div class="grid-links">
+                        <a href=""><i class="fa-solid fa-link"></i> Acessar</a>
+                        <a href="g"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <picture>
+                        <img src="images/projetos-imgs/projeto-acai.jpg" alt="Projeto Açaí" height="auto" width="100%">
+                    </picture>
+                    <p>Landing page desenvolvida para uma açaíteria.</p>
+                    <div class="grid-links">
+                        <a href=""><i class="fa-solid fa-link"></i> Acessar</a>
+                        <a href="g"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <picture>
+                        <img src="images/projetos-imgs/crud-php.jpg" alt="CRUD PHP" height="auto" width="100%">
+                    </picture>
+                    <p>CRUD desenvolvido em PHP e MySQL.</p>
+                    <div class="grid-links">
+                        <a href=""><i class="fa-solid fa-link"></i> Acessar</a>
+                        <a href="g"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <picture>
+                        <img src="images/projetos-imgs/calculadorajs.jpg" alt="CalculadoraJS" height="auto" width="100%">
+                    </picture>
+                    <p>Calculadora desenvolvida com JavaScript.</p>
+                    <div class="grid-links">
+                        <a href=""><i class="fa-solid fa-link"></i> Acessar</a>
+                        <a href="g"><i class="fa-brands fa-github"></i> Repositório</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h1 class="sessao-titulo">ENTRE COM CONTATO!</h1>
+            <div class="linha"></div>
+
+            <div id="grid-contato">
+                <div class="contato-item">
+                    <a href="mailto:pablopbs940@gmail.com" rel="external" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <p>Email</p>
+                    <span>pablopbs940@gmail.com</span>
+                </div>
+                <div class="contato-item">
+                    <a href="https://api.whatsapp.com/send?phone=5599982422234" rel="external" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <p>Telefone</p>
+                    <span>(99) 9 8242-2234</span>
+                </div>
+                <div class="contato-item">
+                    <a href="https://www.linkedin.com/in/pablopbs" rel="external" target="_blank"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    <p>LinkedIn</p>
+                    <span>in/pablopbs</span>
+                </div>
+                <div class="contato-item">
+                    <a href="https://github.com/PabloPBS" rel="external" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <p>GitHub</p>
+                    <span>/PabloPBS</span>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <h1>Pablo Barbosa Silva</h1>
+        <p>Agradeço por ter chegado até aqui.</p>
+        <ul>
+            <li>
+                <a href="mailto:pablopbs940@gmail.com" rel="external" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5599982422234" rel="external" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/pablopbs" rel="external" target="_blank"><i class="fa-brands fa-linkedin-in"></i> </a>
+                <a href="https://github.com/PabloPBS" rel="external" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+        <p>Desenvolvido por <a href="https://github.com/PabloPBS">PabloPBS</a></p>
     </footer>
 </body>
 </html>
