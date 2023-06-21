@@ -39,7 +39,11 @@ header {
     z-index: 99;
 }
 
-header > button {
+header .button-menu {
+    display: none;
+}
+
+header .header-button {
     border: none;
     background: none;
     cursor: pointer;
@@ -47,7 +51,7 @@ header > button {
     width: 20px;
 }
 
-header > button > i {
+header .header-button > #theme {
     color: var(--black);
 }
 
@@ -543,4 +547,38 @@ footer > p {
 footer > p > a {
     font-weight: bold;
     color: var(--red);
+}
+
+@media screen and (max-width: 900px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: top 1s ease;
+        position: fixed;
+        background-color: var(--header);
+        font-size: 1.5em;
+        padding: 10vh 0px;
+    }
+
+    #menu li {
+        padding: 1em 0px;
+    }
+
+    #header-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 15vw;
+    }
+
+    header .button-menu {
+        display: block;
+        color: var(--black);
+    }
 }

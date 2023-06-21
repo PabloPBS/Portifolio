@@ -17,15 +17,19 @@
 
         <nav>
             <ul id="menu">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#apresentacao">APRESENTAÇÃO</a></li>
-                <li><a href="#tecnologias">TECNOLOGIAS</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#contato">CONTATO</a></li>
+                <li><a class="button-list" href="#home">HOME</a></li>
+                <li><a class="button-list" href="#apresentacao">APRESENTAÇÃO</a></li>
+                <li><a class="button-list" href="#tecnologias">TECNOLOGIAS</a></li>
+                <li><a class="button-list" href="#projetos">PROJETOS</a></li>
+                <li><a class="button-list" href="#contato">CONTATO</a></li>
+                <li><button id="close-menu" class="header-button button-menu"><i class="fa-solid fa-xmark"></i></button></li>
             </ul>
         </nav>
 
-        <button><i id="theme" class="fa-solid fa-moon"></i></button>
+        <div id="header-icons">
+            <button id="open-menu" class="header-button button-menu"><i class="fa-solid fa-bars"></i></button>
+            <button class="header-button"><i id="theme" class="fa-solid fa-moon"></i></button>
+        </div>
         <!--<i class="fa-solid fa-sun"></i>-->
     </header>
     <main>
@@ -207,6 +211,7 @@
         <p>Desenvolvido por <a href="https://github.com/PabloPBS" rel="external" target="_blank">Pablo Barbosa Silva</a></p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/dark-theme.js"></script>
+    <script src="scripts/menu-mobile.js"></script>
 </body>
 </html>
