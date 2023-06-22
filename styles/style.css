@@ -145,7 +145,7 @@ header > nav > #menu > li > a:hover {
     padding-top: 15px;
     padding-bottom: 0px;
     font-size: .9em;
-    width: 80%;
+    width: 90%;
 }
 
 #home-div > #home-links > a {
@@ -324,7 +324,7 @@ header > nav > #menu > li > a:hover {
 
 #grid-projetos > .grid-item {
     width: 45vw;
-    height: 70vh;
+    height: max-content;
     background-image: linear-gradient(var(--green), #262526 80%);
     display: flex;
     flex-direction: column;
@@ -349,6 +349,7 @@ header > nav > #menu > li > a:hover {
 .grid-links {
     width: 80%;
     margin-top: 10px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -549,7 +550,7 @@ footer > p > a {
     color: var(--red);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
     #menu {
         display: none;
         flex-direction: column;
@@ -561,7 +562,7 @@ footer > p > a {
         left: 0;
         transition: top 1s ease;
         position: fixed;
-        background-color: var(--header);
+        background-color: rgba(255, 255, 255, 0.5);
         font-size: 1.5em;
         padding: 10vh 0px;
     }
@@ -580,5 +581,157 @@ footer > p > a {
     header .button-menu {
         display: block;
         color: var(--black);
+    }
+
+    #contato > #grid-contato {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        font-size: .8em;
+    }
+
+    footer > #informacoes {
+        flex-direction: column;
+    }
+
+    #informacoes-sobre > p {
+        width: 90vw;
+    }
+
+    #informacoes-contato {
+        margin-bottom: 20px;
+    }
+
+    #quick-links {
+        width: 90vw;
+    }
+
+    #informacoes-contatos {
+        margin: 20px 0px;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #home-div {
+        font-size: 1em;
+        padding: 30px;
+        width: 80vw;
+    }
+
+    #home-links {
+        margin-right: 0px;
+        border: none;
+        padding: 0px;
+    }
+
+    #apresentacao {
+        height: max-content;
+    }
+
+    #apresentacao-dados {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #apresentacao-dados img {
+        margin-bottom: 10px;
+    }
+
+    #apresentacao > div#apresentacao-dados > #apresentacao-texto {
+        width: 90%;
+    }
+
+    #apresentacao-dados p {
+        width: 90vw;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    #tecnologias {
+        height: max-content;
+    }
+
+    #tecnologias > #tecnologias-itens {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    #tecnologias > #tecnologias-itens > div {
+        width: 45vw;
+        height: 50vh;
+    }
+
+    #tecnologias-itens > div > i {
+        font-size: 4em;
+    }
+
+    #projetos > #grid-projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #projetos > #grid-projetos > .grid-item {
+        width: 95vw;
+        height: 60vh;
+        font-size: .8em
+    }
+}
+
+@media screen  and (min-width: 426px) and (max-width: 768px) {
+    header {
+        justify-content: space-evenly;
+        padding: 2px;
+    }
+
+    #home-div {
+        width: 80vw;
+    }
+
+    #apresentacao {
+        height: max-content;
+    }
+
+    #apresentacao > #apresentacao-dados {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #apresentacao > div#apresentacao-dados > #apresentacao-texto {
+        width: 80vw;
+        padding: 20px 0px;
+    }
+
+    #tecnologias {
+        height: max-content;
+        padding-bottom: 20px;
+    }
+
+    #tecnologias > #tecnologias-itens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tecnologias-itens > div {
+        width: 40vw;
+        height: 60vh;
+    }
+
+    #projetos > #grid-projetos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #grid-projetos > .grid-item {
+        width: 90vw;
+        height: max-content;
+    }
+
+    .grid-links {
+        padding-bottom: 10px;
     }
 }
