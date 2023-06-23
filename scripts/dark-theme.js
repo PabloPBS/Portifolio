@@ -16,8 +16,7 @@ theme.addEventListener('click', function() {
         //Mudando a logo para branco
         logo.src = "images/logo/logo-white.png"
 
-        //Mundado o background da sessão projetos e tecnologias
-        sessaoTecnologias.style.backgroundImage = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%234a402f' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%236e5a38' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23917540' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23b58f49' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D9AA52' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E\")"
+        //Mundado o background da sessão projetos
         sessaoProjetos.style.backgroundImage = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23b58f49' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23917540' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%236e5a38' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%234a402f' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23262526' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E\")"
     } else {
         //Mudando o ícone para a lua
@@ -31,8 +30,7 @@ theme.addEventListener('click', function() {
         //Mudando a logo para black
         logo.src = "images/logo/logo.png"
 
-        //Mudando o background da sessão projeto e tecnologias
-        sessaoTecnologias.style.backgroundImage = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ede1cb' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e8d3ad' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e3c68e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23deb870' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D9AA52' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E\")"
+        //Mudando o background da sessão projetos
         sessaoProjetos.style.backgroundImage = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23deb870' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e3c68e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e8d3ad' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ede1cb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23F2EFE9' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E\")"
     }
 })

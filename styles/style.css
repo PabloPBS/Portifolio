@@ -23,6 +23,7 @@ html {
 body {
     background-color: var(--white);
     font-family: 'Josefin Slab', serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -234,9 +235,6 @@ header > nav > #menu > li > a:hover {
     height: max-content;
     border-bottom: 1px solid #F2EFE9;
     padding-bottom: 20px;
-    background-color: var(--white);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23ede1cb' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e8d3ad' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e3c68e' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23deb870' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D9AA52' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: cover;
 }
 
 #tecnologias > #tecnologias-itens {
@@ -245,60 +243,45 @@ header > nav > #menu > li > a:hover {
     align-items: center;
     justify-content: center;
     justify-items: center;
-    gap: 20px;
+    row-gap: 20px;
+    pointer-events: none;
 }
 
-#tecnologias-itens > div {
+#tecnologias-itens > .child {
     height: 15vw;
     padding: 20px;
     width: 25vw;
-    background-image: linear-gradient(135deg, #252525, var(--yellow) 80%);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transition: transform .2s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transition: .2s ease-in-out;
 }
 
-#tecnologias-itens > div:hover {
-    transform: translate(0, -10px);
+#tecnologias-itens > * {
+    pointer-events: auto;
 }
 
-#tecnologias-itens > div > i {
-    font-size: 5em;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
-    transition: color .4s ease-in-out;
+#tecnologias-itens:hover > * {
+    opacity: 0.7;
+    transform: scale(0.95);
 }
 
-#html:hover {
-    color: #D96236;
-}
-#css:hover {
-    color: rgb(0, 60, 255);
-}
-#php:hover {
-    color: rgb(58, 120, 255);
-}
-#sql:hover {
-    color: rgb(131, 205, 255);
-}
-#js:hover {
-    color: yellow;
-}
-#python:hover {
-    color: rgb(255, 255, 89);
+#tecnologias-itens:hover > *:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    pointer-events: auto;
 }
 
-#tecnologias-itens > div > p {
+#tecnologias-itens > .child > p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
     margin: 10px;
     text-align: center;
-    color: white;
-    border-top: 1px solid white;
+    color: var(--black);
+    border-top: 1px solid var(--black);
     padding-top: 5px;
 }
 
@@ -664,16 +647,16 @@ footer > p > a {
         padding-bottom: 20px;
     }
 
-    #tecnologias > #tecnologias-itens > div {
+    #tecnologias > #tecnologias-itens > .child {
         width: 35vw;
         height: 35vh;
     }
 
-    #tecnologias-itens > div > i {
+    #tecnologias-itens > .child > i {
         font-size: 4em;
     }
 
-    #tecnologias-itens > div > p {
+    #tecnologias-itens > .child > p {
         font-size: .9em;
     }
 
@@ -723,12 +706,12 @@ footer > p > a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #tecnologias-itens > div {
+    #tecnologias-itens > .child {
         width: 40vw;
         height: 40vh;
     }
 
-    #tecnologias-itens > div > p {
+    #tecnologias-itens > .child > p {
         font-size: 1.2em;
     }
 
@@ -758,7 +741,7 @@ footer > p > a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #tecnologias > #tecnologias-itens > div {
+    #tecnologias > #tecnologias-itens > .child {
         height: 30vh;
         width: 40vw;
     }
