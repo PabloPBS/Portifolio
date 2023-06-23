@@ -233,7 +233,7 @@ header > nav > #menu > li > a:hover {
 
 #tecnologias {
     height: max-content;
-    border-bottom: 1px solid #F2EFE9;
+    border-bottom: 1px solid var(--yellow);
     padding-bottom: 20px;
 }
 
@@ -286,20 +286,12 @@ header > nav > #menu > li > a:hover {
 }
 
 #projetos {
-    background-color: var(--yellow);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23deb870' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23e3c68e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e8d3ad' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ede1cb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23F2EFE9' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: no-repeat;
+    background-color: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23d9aa52' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23262526' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23da9d48' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%233f3437' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23da8f40' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2359443f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23da813a' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%236b5845' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23da7237' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23707150' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23d96236' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23688c6a' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
     background-size: cover;
+    background-attachment: fixed;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--yellow);
-}
-
-#projetos > h1 {
-    color: white;
-}
-
-#projetos > .linha {
-    background-color: #F2EFE9;
 }
 
 #projetos > #grid-projetos {
@@ -314,7 +306,7 @@ header > nav > #menu > li > a:hover {
 #grid-projetos > .grid-item {
     width: 45vw;
     height: max-content;
-    background-image: linear-gradient(var(--yellow), #262526 80%);
+    background-image: linear-gradient(var(--yellow), #262526f5 80%);
     display: flex;
     flex-direction: column;
     align-items: center;
